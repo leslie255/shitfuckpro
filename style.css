@@ -1,0 +1,33 @@
+/* style.css */
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* Light mode colors */
+  --bg: #ffffff;
+  --text: #000000;
+  --link: #497b9c;
+  --link-visited: #8c6e9c;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #212121;
+    --text: #ffffff;
+    --link: #ae8fbf;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
